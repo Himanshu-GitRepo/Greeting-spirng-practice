@@ -14,6 +14,11 @@ public class GitLearningProjectApplication {
 	public String greet(@PathVariable String name) {
 		return "Hello "+ name+", "+ "Good Morning"; 
 	}
+	
+	@GetMapping("/status")
+	public String status() {
+		return "how are you";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(GitLearningProjectApplication.class, args);
